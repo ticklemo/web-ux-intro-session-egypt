@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Egypt</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 200;
+      background: #f5f3ec;
+    }
+
+    h1 {
+      color: #181818;
+      font-size: 50px;
+      margin: 0;
+      margin-right: 20px;
+    }
+
+    h2 {
+      color: #864041;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    h3 {
+      color: #555;
+      font-weight: 300;
+      font-size: 25px;
+    }
+
+    h4 {
+      color: #999;
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+    h5 {
+      color: #111;
+      font-weight: bolder;
+      font-size: 15px;
+    }
+
+    h6 {
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    p {
+      color: #373535;
+      font-size: 26.4px;
+    }
+
+    h1,
+    p {
+      margin-top: 30px;
+    }
+
+    img {
+      max-width: 95%;
+    }
+
+    .credit {
+      font-size: 15px;
+      font-style: italic;
+      color: #373535;
+      margin-top: 10px;
+    }
+
+    .left {
+      float: left;
+      width: 46%;
+      padding-left: 4%;
+    }
+
+    .right {
+      float: right;
+      width: 46%;
+      padding-right: 4%;
+      margin-top: 20px;
+    }
+
+    .right p {
+      padding-top: 160px;
+    }
+
+    /* Media queries- changes the look of the site when the width of the screen is 768px or below */
+    @media(max-width:768px) {
+
+      .left,
+      .right {
+        width: 100%;
+        padding: 10px;
+      }
+
+      p {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 0;
+      }
+
+      .right p {
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- the orange pieces of code are attributes (alt, id, class, etc)
+  <! Adjust the path of the image ( img/) -->
+  <div class="left">
+    <h1>Egyptians kept many animals as pets.</h1>
+    <p class="credit">The Art Archive/Corbis</p>
+    <img src="img/egyptian-pets.png" alt="">
+
+  </div>
+  <div class="right">
+    <p>
+      The Egyptians saw animals as incarnations of the gods and were one of the first civilizations to keep household pets. Egyptians were particularly fond of cats, which were associated with the goddess Bastet, but they also had a reverence for
+      hawks, ibises, dogs, lions and baboons. Many of these animals held a special place in the Egyptian home, and they were often mummified and buried with their owners after they died. Other creatures were specially trained to work as helper
+      animals. Egyptian police officers, for example, were known to use dogs and even trained monkeys to assist them when out on patrol.
+    </p>
+  </div>
+  <!-- <div id="theSquare" class="is-a-class"></div> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- internal javascript -->
+<script>
+
+  // alert('good morning friend');
+
+  // $ means we are using JQUERY
+
+  // Sets a timer- the function runs the code once the time has passed
+
+  // setTimeout(function(){
+  //   $('img').hide(5000);
+  // }, 3000);
+
+  // these are jquery methods -> $('img') is a jquery selector!  -- 5000 is the time it takes to  shrink away in milliseconds (5 seconds)
+
+  // $('img').show(1000);
+  // $('.left').fadeOut(5000);
+  // $('.left').fadeIn(1000);
+  // $('.right').fadeOut(2000);
+  // $('.right').fadeIn(1000);
+  // $('h1').hide(1000);
+  // $('h1').show(1000);
+
+  // changes the body's background colour and p and h1's colour when you hover over the right div
+  $('.right').mouseover(function(){
+    $('body').css('background-color', '#181818');
+    $('p, h1').css('color', '#f5f3ec');
+  });
+
+  $('.left').mouseover(function(){
+    $('body').css('background-color', '#f5f3ec');
+    $('p, h1').css('color', '#181818');
+  }); //mouseover ends
+
+</script>
+</body>
+
+</html>
